@@ -1,5 +1,6 @@
-import EventCB from "../_event/Event";
+import dynamic from "next/dynamic";
+import Loading from "@/app/loading";
+const EventCB = dynamic(() => import("../_event/Event"), { loading: Loading });
 export default function Event({ params }: { params: { id: string } }) {
-  console.log("loggggggggggg");
   return <EventCB id={params.id} />;
 }

@@ -3,5 +3,6 @@ export const path = {
   menu: "/menu",
   about: "/about",
   event: "/event",
-  eventPage: "/tin-tuc-su-kien",
+  eventPage: "/new-and-event",
+  product: "/product",
 };

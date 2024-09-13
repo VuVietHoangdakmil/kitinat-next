@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Layout from "@/components/_layout/LayoutKatinat";
+
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import "./globals.css";
-
+import { ConfigProvider } from "antd";
+// Import CSS của Ant Design ở đây
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -31,7 +33,15 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <AntdRegistry>
-          <Layout> {children} </Layout>
+          <ConfigProvider
+            theme={{
+              token: {
+                colorPrimary: "#bf9369",
+              },
+            }}
+          >
+            <Layout> {children} </Layout>
+          </ConfigProvider>
         </AntdRegistry>
       </body>
     </html>

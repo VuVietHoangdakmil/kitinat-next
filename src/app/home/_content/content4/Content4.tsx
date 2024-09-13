@@ -108,10 +108,10 @@ const Content4: React.FC = () => {
     <Row ref={ref} gutter={20} style={{ width: "90%", margin: "0 auto" }}>
       {inView && (
         <>
-          <Col span={12}>
+          <Col span={12} xs={24} sm={12} md={8} lg={12}>
             <ContentRight />
           </Col>
-          <Col span={12}>
+          <Col span={12} xs={24} sm={12} md={8} lg={12}>
             <ContentLeft />
           </Col>
         </>

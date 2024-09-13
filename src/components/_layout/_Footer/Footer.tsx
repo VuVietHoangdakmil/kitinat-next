@@ -1,18 +1,20 @@
 import "./index.css";
 import { Row, Col } from "antd";
 import Image from "next/image";
+import { useResponsive } from "@/hook/useResponsive";
 const Footer = () => {
+  const reponsive = useResponsive();
   return (
     <footer className="footer-main text-xl ">
       <Row
-        gutter={25}
+        gutter={[25, 20]}
         style={{
           width: "var(--with-main)",
           margin: "0 auto",
           paddingTop: "50px",
         }}
       >
-        <Col span={8}>
+        <Col span={reponsive?.isMobile ? 24 : 12}>
           <div style={{ textAlign: "center" }}>
             <Image
               width={180}
@@ -29,7 +31,7 @@ const Footer = () => {
             Việt Nam và trên thế giới đến khách hàng.
           </h3>
         </Col>
-        <Col span={8}>
+        <Col span={reponsive?.isMobile ? 24 : 12}>
           <h2>LIÊN HỆ</h2>
           <h3 className="">
             Email: cs@katinat.vn Representative Store : 91 Đồng Khởi, Bến Nghé,
@@ -50,25 +52,12 @@ const Footer = () => {
             </div>
           </ul>
         </Col>
-        <Col span={8}>
-          <Image
-            width={500}
-            height={100}
-            // className="img-zoom"
-            style={{
-              borderRadius: "10px",
-            }}
-            loading="lazy"
-            src="/img/WEB-FOOTER-2048x1871.png"
-            alt=""
-          />
-        </Col>
       </Row>
       <div
         style={{
           borderTop: "1px white solid",
           textAlign: "center",
-
+          marginTop: "20px",
           lineHeight: "60px",
           height: "60px",
         }}

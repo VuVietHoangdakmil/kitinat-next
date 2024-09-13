@@ -1,19 +1,22 @@
+"use client";
+import { useResponsive } from "@/hook/useResponsive";
 import { EmblaOptionsType } from "embla-carousel";
 import ExitAnimation from "@/components/_ExitAnimation";
 import { silde } from "@/components/_ExitAnimation/ExitAnimation";
 import { path } from "@/path";
 import { KEY } from "@/types/enum";
+
 const OPTIONS: EmblaOptionsType = { loop: true };
 
 export const SLIDES: silde[] = [
   {
     properties: {
-      src: "/img/home/content5/content5a.jpg",
+      src: "/img/product/product1.jpg",
       content: {
         content1: " Tin tức & sự kiện",
         content2:
           "HUYỀN CHÂU BƠ SỮA – DẺO HUYỀN CHÂU, THƠM SỮA MỚI – CHÍNH THỨC ĐƯỢC RA MẮT",
-        content3: "By KATINAT 01/08/2024",
+        content3: "By ECoffeeLink 01/08/2024",
         content4:
           "Huyền Châu Bơ Sữa chính là sự sáng tạo mới đầy hấp dẫn, đánh dấu lần hợp tác chính thức...",
       },
@@ -23,91 +26,157 @@ export const SLIDES: silde[] = [
   },
   {
     properties: {
-      src: "/img/home/content5/content5b.jpeg",
+      src: "/img/product/product2.jpg",
       content: {
         content1: " Tin tức & sự kiện",
         content2:
-          "KATINAT CHÍNH THỨC RA MẮT ỨNG DỤNG, “KƯNG” THÀNH VIÊN KHÔNG GIỚI HẠN",
-        content3: "By KATINAT 01/01/2025",
+          "HUYỀN CHÂU BƠ SỮA – DẺO HUYỀN CHÂU, THƠM SỮA MỚI – CHÍNH THỨC ĐƯỢC RA MẮT",
+        content3: "By ECoffeeLink 01/08/2024",
         content4:
-          "Sau thời gian ấp ủ, cuối cùng KATINAT tự hào ra mắt phiên bản Mobile App - ứng dụng thành...",
+          "Huyền Châu Bơ Sữa chính là sự sáng tạo mới đầy hấp dẫn, đánh dấu lần hợp tác chính thức...",
       },
-      link: path.event + "/" + KEY.APP,
+      link: path.event + "/" + KEY.HUYEN_CHAU_BO_SUA,
     },
     type: "content",
   },
   {
     properties: {
-      src: "/img/home/content5/content5c.jpg",
+      src: "/img/product/product3.jpg",
       content: {
         content1: " Tin tức & sự kiện",
         content2:
-          "Cóc Cóc Đác Đác – Cóc Mát Đác Thơm chính thức được ra mắt trên toàn hệ thống KATINAT vào...",
-        content3: "By KATINAT 01/01/2025",
-        content4: "KATINAT RA MẮT CÓC CÓC ĐÁC ĐÁC, KHUẤY ĐỘNG HÈ 2024",
+          "HUYỀN CHÂU BƠ SỮA – DẺO HUYỀN CHÂU, THƠM SỮA MỚI – CHÍNH THỨC ĐƯỢC RA MẮT",
+        content3: "By ECoffeeLink 01/08/2024",
+        content4:
+          "Huyền Châu Bơ Sữa chính là sự sáng tạo mới đầy hấp dẫn, đánh dấu lần hợp tác chính thức...",
       },
-      link: path.event + "/" + KEY.COC_MAT_ĐAC_THOM,
+      link: path.event + "/" + KEY.HUYEN_CHAU_BO_SUA,
     },
     type: "content",
   },
   {
     properties: {
-      src: "/img/home/content5/content5d.jpg",
+      src: "/img/product/product4.jpg",
       content: {
         content1: " Tin tức & sự kiện",
-        content2: "NHÀI SỮA LỤC VÂN – ĐIỂM TẦNG HƯƠNG – VƯƠNG NHÀI TRẮNG",
-        content3: "By KATINAT 01/08/2024",
+        content2:
+          "HUYỀN CHÂU BƠ SỮA – DẺO HUYỀN CHÂU, THƠM SỮA MỚI – CHÍNH THỨC ĐƯỢC RA MẮT",
+        content3: "By ECoffeeLink 01/08/2024",
         content4:
-          "CHÍNH THỨC ĐƯỢC RA MẮT Khởi đầu năm mới, tận hưởng từng tầng hương hoa nhài trắng của Nhài Sữa...",
+          "Huyền Châu Bơ Sữa chính là sự sáng tạo mới đầy hấp dẫn, đánh dấu lần hợp tác chính thức...",
       },
-      link: path.event + "/" + KEY.NHAI_SUA_LUC_VAN,
+      link: path.event + "/" + KEY.HUYEN_CHAU_BO_SUA,
     },
     type: "content",
   },
   {
     properties: {
-      src: "https://katinat.vn/wp-content/uploads/2024/03/422314909_370632722332261_2855562106831383588_n.jpg",
+      src: "/img/product/product5.jpg",
       content: {
         content1: " Tin tức & sự kiện",
-        content2: "NHÀI SỮA LỤC VÂN – ĐIỂM TẦNG HƯƠNG – VƯƠNG NHÀI TRẮNG",
-        content3: "By KATINAT 01/08/2024",
+        content2:
+          "HUYỀN CHÂU BƠ SỮA – DẺO HUYỀN CHÂU, THƠM SỮA MỚI – CHÍNH THỨC ĐƯỢC RA MẮT",
+        content3: "By ECoffeeLink 01/08/2024",
         content4:
-          "CHÍNH THỨC ĐƯỢC RA MẮT Khởi đầu năm mới, tận hưởng từng tầng hương hoa nhài trắng của Nhài Sữa...",
+          "Huyền Châu Bơ Sữa chính là sự sáng tạo mới đầy hấp dẫn, đánh dấu lần hợp tác chính thức...",
       },
-      link: path.event + "/" + KEY.NHAI_SUA_LUC_VAN,
+      link: path.event + "/" + KEY.HUYEN_CHAU_BO_SUA,
     },
     type: "content",
   },
   {
     properties: {
-      src: "https://katinat.vn/wp-content/uploads/2024/01/1-e1712644356377.jpg",
+      src: "/img/product/product6.jpg",
       content: {
         content1: " Tin tức & sự kiện",
-        content2: "NHÀI SỮA LỤC VÂN – ĐIỂM TẦNG HƯƠNG – VƯƠNG NHÀI TRẮNG",
-        content3: "By KATINAT 01/08/2024",
+        content2:
+          "HUYỀN CHÂU BƠ SỮA – DẺO HUYỀN CHÂU, THƠM SỮA MỚI – CHÍNH THỨC ĐƯỢC RA MẮT",
+        content3: "By ECoffeeLink 01/08/2024",
         content4:
-          "CHÍNH THỨC ĐƯỢC RA MẮT Khởi đầu năm mới, tận hưởng từng tầng hương hoa nhài trắng của Nhài Sữa...",
+          "Huyền Châu Bơ Sữa chính là sự sáng tạo mới đầy hấp dẫn, đánh dấu lần hợp tác chính thức...",
       },
-      link: path.event + "/" + KEY.NHAI_SUA_LUC_VAN,
+      link: path.event + "/" + KEY.HUYEN_CHAU_BO_SUA,
     },
     type: "content",
   },
   {
     properties: {
-      src: "/img/home/content3/content3a.jpg",
+      src: "/img/product/product7.jpg",
       content: {
         content1: " Tin tức & sự kiện",
-        content2: "NHÀI SỮA LỤC VÂN – ĐIỂM TẦNG HƯƠNG – VƯƠNG NHÀI TRẮNG",
-        content3: "By KATINAT 01/08/2024",
+        content2:
+          "HUYỀN CHÂU BƠ SỮA – DẺO HUYỀN CHÂU, THƠM SỮA MỚI – CHÍNH THỨC ĐƯỢC RA MẮT",
+        content3: "By ECoffeeLink 01/08/2024",
         content4:
-          "CHÍNH THỨC ĐƯỢC RA MẮT Khởi đầu năm mới, tận hưởng từng tầng hương hoa nhài trắng của Nhài Sữa...",
+          "Huyền Châu Bơ Sữa chính là sự sáng tạo mới đầy hấp dẫn, đánh dấu lần hợp tác chính thức...",
       },
-      link: path.event + "/" + KEY.NHAI_SUA_LUC_VAN,
+      link: path.event + "/" + KEY.HUYEN_CHAU_BO_SUA,
+    },
+    type: "content",
+  },
+  {
+    properties: {
+      src: "/img/product/product8.jpg",
+      content: {
+        content1: " Tin tức & sự kiện",
+        content2:
+          "HUYỀN CHÂU BƠ SỮA – DẺO HUYỀN CHÂU, THƠM SỮA MỚI – CHÍNH THỨC ĐƯỢC RA MẮT",
+        content3: "By ECoffeeLink 01/08/2024",
+        content4:
+          "Huyền Châu Bơ Sữa chính là sự sáng tạo mới đầy hấp dẫn, đánh dấu lần hợp tác chính thức...",
+      },
+      link: path.event + "/" + KEY.HUYEN_CHAU_BO_SUA,
+    },
+    type: "content",
+  },
+  {
+    properties: {
+      src: "/img/product/product9.jpg",
+      content: {
+        content1: " Tin tức & sự kiện",
+        content2:
+          "HUYỀN CHÂU BƠ SỮA – DẺO HUYỀN CHÂU, THƠM SỮA MỚI – CHÍNH THỨC ĐƯỢC RA MẮT",
+        content3: "By ECoffeeLink 01/08/2024",
+        content4:
+          "Huyền Châu Bơ Sữa chính là sự sáng tạo mới đầy hấp dẫn, đánh dấu lần hợp tác chính thức...",
+      },
+      link: path.event + "/" + KEY.HUYEN_CHAU_BO_SUA,
+    },
+    type: "content",
+  },
+  {
+    properties: {
+      src: "/img/product/product10.jpg",
+      content: {
+        content1: " Tin tức & sự kiện",
+        content2:
+          "HUYỀN CHÂU BƠ SỮA – DẺO HUYỀN CHÂU, THƠM SỮA MỚI – CHÍNH THỨC ĐƯỢC RA MẮT",
+        content3: "By ECoffeeLink 01/08/2024",
+        content4:
+          "Huyền Châu Bơ Sữa chính là sự sáng tạo mới đầy hấp dẫn, đánh dấu lần hợp tác chính thức...",
+      },
+      link: path.event + "/" + KEY.HUYEN_CHAU_BO_SUA,
+    },
+    type: "content",
+  },
+  {
+    properties: {
+      src: "/img/product/product11.jpg",
+      content: {
+        content1: " Tin tức & sự kiện",
+        content2:
+          "HUYỀN CHÂU BƠ SỮA – DẺO HUYỀN CHÂU, THƠM SỮA MỚI – CHÍNH THỨC ĐƯỢC RA MẮT",
+        content3: "By ECoffeeLink 01/08/2024",
+        content4:
+          "Huyền Châu Bơ Sữa chính là sự sáng tạo mới đầy hấp dẫn, đánh dấu lần hợp tác chính thức...",
+      },
+      link: path.event + "/" + KEY.HUYEN_CHAU_BO_SUA,
     },
     type: "content",
   },
 ];
 const Content5 = () => {
+  const reponsive = useResponsive();
   return (
     <>
       <h1 style={{ textAlign: "center", color: "var(--primary-color)" }}>
@@ -115,9 +184,11 @@ const Content5 = () => {
       </h1>
       <ExitAnimation
         startAnimation={false}
-        slideSize="100%/3"
+        slideSize={reponsive?.isMobile ? "100%" : "100%/3"}
         slides={SLIDES}
-        options={OPTIONS}
+        options={{
+          ...OPTIONS,
+        }}
         positionAbsolute={false}
         isboxBtn={true}
       />
