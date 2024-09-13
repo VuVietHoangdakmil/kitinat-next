@@ -52,7 +52,9 @@ const Product = () => {
 
       {transitions((style) => (
         <animated.div style={style}>
-          <Row style={{ zIndex: 1, justifyContent: "center" }}>
+          <Row
+            style={{ zIndex: 1, justifyContent: "center", marginTop: "20px" }}
+          >
             <List
               className="custom-list"
               dataSource={data}

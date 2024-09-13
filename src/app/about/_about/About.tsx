@@ -172,8 +172,7 @@ const Menu = () => {
               value:
                 " – Bộ sưu tập Cà Phê Phin với công thức độc quyền ECoffeeLink, làm bật nên vị đậm đặc trưng của Robusta Buôn Mê Thuột, tạo nên hương vị sáng tạo khó phai.",
             }}
-            img="/img/view/view7.jpg
-            "
+            img="/img/view/view7.jpg"
           />
         </div>
         <div style={{ textAlign: "center", margin: "0 auto" }}>
