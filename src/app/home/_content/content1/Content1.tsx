@@ -1,7 +1,8 @@
+"use client";
 import { EmblaOptionsType } from "embla-carousel";
 import ExitAnimation from "@/components/_ExitAnimation";
 import { silde } from "@/components/_ExitAnimation/ExitAnimation";
-
+import { useResponsive } from "@/hook/useResponsive";
 const OPTIONS: EmblaOptionsType = { loop: true };
 
 const SLIDES: silde[] = [
@@ -31,6 +32,7 @@ const SLIDES: silde[] = [
   },
 ];
 const Content1 = () => {
+  const reponsive = useResponsive();
   return (
     <ExitAnimation
       startAnimation={true}
@@ -38,6 +40,7 @@ const Content1 = () => {
       slides={SLIDES}
       options={OPTIONS}
       positionAbsolute={true}
+      hiddenDot={reponsive?.isMobile}
     />
   );
 };

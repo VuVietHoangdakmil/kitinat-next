@@ -191,6 +191,7 @@ const Content5 = () => {
         }}
         positionAbsolute={false}
         isboxBtn={true}
+        hiddenDot={reponsive?.isMobile}
       />
     </>
   );

@@ -16,11 +16,7 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-{
-  /* <link rel="icon" type="image/svg+xml" href="/img/logo.png" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>E-CoffeeLink</title> */
-}
+
 export const metadata: Metadata = {
   title: "E-CoffeeLink",
   description: "E-CoffeeLink",

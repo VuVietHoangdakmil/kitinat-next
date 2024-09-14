@@ -1,7 +1,7 @@
 "use client";
 import { useTransition, useSpringRef, animated } from "@react-spring/web";
 import { useEffect } from "react";
-
+import { useResponsive } from "@/hook/useResponsive";
 import useInViewCustom from "../../../../hook/useInviewCustom";
 import { Row, Col, Button } from "antd";
 import ExitAnimation from "@/components/_ExitAnimation";
@@ -77,6 +77,7 @@ const SLIDES: silde[] = [
   },
 ];
 const ContentRight = () => {
+  const reponsive = useResponsive();
   const transRef = useSpringRef();
   const transitions = useTransition(null, {
     ref: transRef,
@@ -94,10 +95,11 @@ const ContentRight = () => {
       {" "}
       <ExitAnimation
         slideSize="100%"
-        hiddenArrow={true}
+        hiddenArrow={!reponsive?.isMobile}
         slides={SLIDES}
         options={OPTIONS}
         positionAbsolute={true}
+        hiddenDot={reponsive?.isMobile}
       />
     </animated.div>
   ));
